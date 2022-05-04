@@ -12,9 +12,9 @@
     <div class="container">
       <h2 class="logo">Naomi Teruya</h2>
       <ul class="contato">
-        <li><a href="https://github.com/nahteruya">GitHub</a></li>
-        <li><a href="www.linkedin.com/in/kelly-naomi-teruya">LinkedIn</a></li>
-        <li><a href="mailto:nahteruya@gmail.com">Email</a></li>
+        <li><a target="_blank" href="https://github.com/nahteruya">GitHub</a></li>
+        <li><a target="_blank" href="https://linkedin.com/in/kelly-naomi-teruya">LinkedIn</a></li>
+        <li><a target="_blank" href="mailto:nahteruya@gmail.com">Email</a></li>
       </ul>
     </div>
   </header>
@@ -33,25 +33,32 @@
           <img id="arrow" src="https://cdn-icons-png.flaticon.com/512/32/32323.png" alt="seta">
         </div>
         <div class="sobre">
-          <p>Tenho 21 anos e tenho muito interesse na área de desenvolvimento web. Sou aspirante a fullstack, mas venho estudando inicialmente front end. Nunca trabalhei na área de programação, mas busco uma oportunidade para ingressar na área.</p>
+          <p>Tenho 21 anos e muito interesse na área de desenvolvimento web. Sou aspirante a fullstack, mas venho estudando inicialmente as tecnologias de front end. Nunca trabalhei na área de programação, mas busco uma oportunidade para ingressar no mercado de desenvolvimento.</p>
         </div>
         <div class="form">
           <p>Deixe seu contato!</p>
           <div class="input">
-            <input type="text">
-            <button>Enviar</button>
+            <input id ="input" type="text" placeholder="Digite seu email">
+            <button id="send">Enviar</button>
           </div>
         </div>
       </div>
     </section>
     <script>
-      let btn = document.getElementById('arrow');
-      btn.addEventListener('click', showAbout);
+      let arrowBtn = document.getElementById('arrow');
+      arrowBtn.addEventListener('click', showAbout);
       let div = document.getElementsByClassName('sobre')[0];
-      console.log(cont);
+      
       function showAbout() {
-        btn.classList.toggle('rotate');
+        arrowBtn.classList.toggle('rotate');
         div.classList.toggle('showText');
+      }
+
+      let sendBtn = document.getElementById('send');
+      sendBtn.addEventListener('click', clearInput);
+
+      function clearInput() {
+        document.getElementById('input').value = "";
       }
     </script>
   </main>
