@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.: Naomi Teruya :.</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h2 class="logo">Naomi Teruya</h2>
+      <ul class="contato">
+        <li><a href="https://github.com/nahteruya">GitHub</a></li>
+        <li><a href="www.linkedin.com/in/kelly-naomi-teruya">LinkedIn</a></li>
+        <li><a href="mailto:nahteruya@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <div class="title">
+          <img src="./assets/img/Foto Perfil.jpeg" alt="Foto Perfil">
+          <h1>Naomi Teruya</h1>
+          <h5>Desenvolvedora Front End</h5>
+          <ul class="tecnologias">
+            <li><img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="Ícone HTML"></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="Ícone CSS"></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="Ícone JS"></li>
+          </ul>
+          <img id="arrow" src="https://cdn-icons-png.flaticon.com/512/32/32323.png" alt="seta">
+        </div>
+        <div class="sobre">
+          <p>Tenho 21 anos e tenho muito interesse na área de desenvolvimento web. Sou aspirante a fullstack, mas venho estudando inicialmente front end. Nunca trabalhei na área de programação, mas busco uma oportunidade para ingressar na área.</p>
+        </div>
+        <div class="form">
+          <p>Deixe seu contato!</p>
+          <div class="input">
+            <input type="text">
+            <button>Enviar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      let btn = document.getElementById('arrow');
+      btn.addEventListener('click', showAbout);
+      let div = document.getElementsByClassName('sobre')[0];
+      console.log(cont);
+      function showAbout() {
+        btn.classList.toggle('rotate');
+        div.classList.toggle('showText');
+      }
+    </script>
+  </main>
+</body>
+</html>
