@@ -1,0 +1,150 @@
+.pageContent {
+  height: 100vh;
+  padding: 0 6rem;
+
+  display: flex;
+  gap: 3rem;
+}
+
+.header {
+  flex: 1;
+  padding: 6rem 0;
+  width: 460px;
+  height: 100vh;
+  position: sticky;
+  overflow-y: auto;
+}
+
+.header h1 {
+  font-size: 3rem;
+}
+
+.header h2 {
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.header p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.header nav {
+  margin-top: 3rem;
+}
+
+.header nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header nav ul li {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  color: #eeeeeeb3;
+}
+
+.indicator {
+  width: 2rem;
+  height: 1px;
+  background-color: #eeeeeeb3;
+}
+
+.socialMedias {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.main section {
+  padding: 6rem 0 0;
+
+  &:last-of-type {
+    margin-bottom: 6rem;
+  }
+}
+
+.main section p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border 0.4s, background-color 0.4s;
+}
+
+.card:hover {
+  border: 1px solid #eeeeeeb3;
+  background-color: #eeeeee1a;
+}
+
+.card .period {
+  color: #eeeeeeb3;
+  min-width: 9rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.projectsList li a {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border 0.4s, background-color 0.4s;
+}
+
+.projectsList li a:hover {
+  border: 1px solid #eeeeeeb3;
+  background-color: #eeeeee1a;
+}
+
+.projectsList li a img {
+  width: 220px;
+}
+
+.projectsList .technologiesList {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
